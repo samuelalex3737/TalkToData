@@ -19,6 +19,14 @@
 - **Frontend** (`/frontend`): A sleek React application offering an intuitive chat interface, query history, and system guardrail monitoring.
 - **Database**: Seeded SQLite database optimized for fast queries.
 
+## 🗺️ Project Development Phases
+
+This project was developed and evaluated across three core phases to establish a reliable data pipeline:
+
+- **Phase A (Rule-Based NL-to-SQL)**: Established deterministic, rule-based mappings for the most common and critical business questions. This guarantees zero hallucinations, high speed, and absolute accuracy for known queries.
+- **Phase B (LLM-Based NL-to-SQL)**: Integrated dynamic Large Language Models (like Ollama and OpenAI) to handle flexible, open-ended, and previously unseen questions, intelligently translating them into executable SQLite syntax.
+- **Phase C (Guardrails & Trust)**: Implemented a comprehensive safety layer to validate LLM outputs. This includes strict read-only execution, schema validation, multi-statement blocking, and semantic explanations (`EXPLAIN QUERY PLAN`) to build user trust before execution.
+
 ## 🚀 Getting Started
 
 ### Prerequisites
