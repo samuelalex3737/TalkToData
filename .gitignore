@@ -1,0 +1,12 @@
+.pydeps/
+__pycache__/
+*.pyc
+frontend/node_modules/
+frontend/dist/
+frontend/*.tsbuildinfo
+backend/talktodata.db
+
+.vercel
+.env
+.env.*
+!.env.example

@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "experimentalServices": {
+    "frontend": {
+      "root": "frontend",
+      "framework": "vite",
+      "routePrefix": "/"
+    },
+    "backend": {
+      "root": ".",
+      "entrypoint": "api/app.py",
+      "routePrefix": "/api"
+    }
+  }
+}
